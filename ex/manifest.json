@@ -1,0 +1,15 @@
+{
+  "name": "Time-GPT",
+  "description": "Agrega la fecha antes de un mensaje en la ChatGPT",
+  "version": "1.0",
+  "manifest_version": 3,
+  "host_permissions": ["https://chatgpt.com/*"],
+  "action": {
+    "default_icon": "icono.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["content.js"]
+    }
+]}
