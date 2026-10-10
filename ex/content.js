@@ -56,7 +56,7 @@ async function buscarElementoDiv(elemento) {
     const BelementoM = new MutationObserver(() => {
         calcFechaHora();
         //console.log("Buscando elementoDiv");
-        elementoDiv = document.querySelector("div#prompt-textarea");
+        elementoDiv = document.querySelector("div.ProseMirror");
         
         if (elementoDiv){
             //console.log(`${elementoDiv} Cargado`);
